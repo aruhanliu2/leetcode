@@ -55,4 +55,4 @@ class Solution {
     }
 }
 
-/* 这道题没有
+/* 这道题没有办法先sort array，再使用夹逼法，因为要求你返回数字的index，位置需要固定，所以Hash Table是最好的solution. */
