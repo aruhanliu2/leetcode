@@ -22,8 +22,25 @@ public class Solution {
     }
 }
 
-// Solution 1: fast slow pointer
-/* Time: O(N + K) = O(n)
+// Solution 1: Hash Table
+// O(n)
+// O(n)
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        Set<ListNode> nodesSeen = new HashSet<>();
+        while (head != null) {
+            if (nodesSeen.contains(head)) {
+                return true;
+            }
+            nodesSeen.add(head);
+            head = head.next;
+        }
+        return false;
+    }
+}
+
+// Solution 2: Floyd's Cycle Finding Algorithm
+/* Time: O(N + K) = O(n) - worst case scenario
  - No cycle: O(n)
  - Has cycle:
     - acyclic part: O(N)
