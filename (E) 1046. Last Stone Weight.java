@@ -1,3 +1,8 @@
+/* Tags: Heap, Greedy */
+
+// My solution
+// O(nlogn)
+// O(n)
 class Solution {
     public int lastStoneWeight(int[] stones) {
         if(stones == null) {
@@ -23,3 +28,5 @@ class Solution {
         return 0;
     }
 }
+
+https://leetcode.com/problems/last-stone-weight/solution/
